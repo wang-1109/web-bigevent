@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大事件-登录/注册</title>
+    <!-- 导入自己的样式 -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+<!-- 导入layUI的样式 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+</head>
+<body>
+<!-- 头部的log区域 -->
+<div class="layui-main">
+    <img src="/assets/images/logo.png" alt="">
+</div>
+    <!-- 登录注册区域 -->
+<div class="loginAndRegBox">
+    <div class="title-box"></div>
+    <!-- 登录的页面 -->
+    <div class="login-box">
+        <form class="layui-form" id="form_login" action="">
+            <!-- 用户名 -->
+            <div class="layui-form-item">
+                <i class="layui-icon layui-icon-username"></i>
+                <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+              </div>
+              <!-- 密码 -->
+              <div class="layui-form-item">
+                <i class="layui-icon layui-icon-password"></i>
+                <input type="password" name="password" required  lay-verify="required|mima" placeholder="请输入密码" autocomplete="off" class="layui-input">
+              </div>
+              <!-- 提交按钮 -->
+              <div class="layui-form-item">
+                <!-- layui-btn-fluid可以使按钮充满整个盒子 -->
+                <!-- 普通按钮和提交按钮的区别在于lay-submit属性 -->
+                <button class="layui-btn
+                layui-btn-fluid layui-btn-normal" lay-submit >登录</button>
+                  <!-- 这只是一个普通的按钮，不是提交按钮 -->
+                <!-- <button type="button" class="layui-btn layui-btn-fluid">流体按钮（最大化适应）</button> -->
+
+              </div>
+              <a href="javascript:;" id="link_reg" class="anniu">去注册账号</a>
+              </form>
+
+    </div>
+    <!-- 注册页面 -->
+    
+    <div class="reg-box">
+        <form class="layui-form" id="form_reg" action="">
+            <!-- 用户名 -->
+            <div class="layui-form-item">
+                <i class="layui-icon layui-icon-username"></i>
+                <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+              </div>
+              <!-- 密码 -->
+              <div class="layui-form-item">
+                <i class="layui-icon layui-icon-password"></i>
+                <input type="password" name="password"id="qwe" required  lay-verify="required|mima" placeholder="请输入密码" autocomplete="off" class="layui-input">
+              </div>
+              <div class="layui-form-item">
+                <i class="layui-icon layui-icon-password"></i>
+                <input type="password" name="repassword" required  lay-verify="required|mima|remima" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
+              </div>
+              <!-- 提交按钮 -->
+              <div class="layui-form-item">
+                <!-- layui-btn-fluid可以使按钮充满整个盒子 -->
+                <!-- 普通按钮和提交按钮的区别在于lay-submit属性 -->
+                <button class="layui-btn
+                layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo" id="zhuce">注册</button>
+                  <!-- 这只是一个普通的按钮，不是提交按钮 -->
+                <!-- <button type="button" class="layui-btn layui-btn-fluid">流体按钮（最大化适应）</button> -->
+
+              </div>
+              <a href="javascript:;" id="link_login" class="anniu">去登录</a>
+            </form>
+    </div>
+</div>
+<!-- 导入layUI的js文件 -->
+<script src="/assets/lib/layui/layui.all.js"></script>
+<!-- 导入jQuery -->
+<script src="/assets/lib/jquery.js"></script>
+<!-- 导入自己封装的通用URL的js -->
+<!-- 注：这个js文件要放在jq之后自己的js之前 -->
+<script src="/assets/js/baseAPI.js"></script>
+<!-- 导入自己的样式 -->
+<script src="/assets/js/login.js"></script>
+</body>
+</html>
