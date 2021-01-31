@@ -62,7 +62,7 @@ if(res.status!==0){
 //    var  token=localStorage.getItem('token')
 //    console.log(token);
    //跳转到后台页面 
-//    location.href='/index.html'
+   location.href='/index.html'
 }
         }
     })
